@@ -1,0 +1,86 @@
+#ejercicio1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(skyblue 75%, blue);
+}
+
+#ejercicio2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(black 10%, orangered 75%, yellow);
+}
+
+#ejercicio3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(gray 10%, green 75%, blue);
+}
+#imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fiu {
+  object-fit: cover;
+  padding: 10vw;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 60vh;
+  width: 20vw;
+}
+
+.contenedorFiu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  width: 20vw;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60vh;
+}
+
+h3 {
+  color: rgb(188, 211, 218);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: rgb(3, 77, 100);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#ppal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+  align-items: flex-start;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body id="ejercicio2">
+    <h3>
+      Ingresa la cantidad de stickers que quieres de cada uno, sólo te puedes
+      llevar 10 stickers en total.
+    </h3>
+    <section>
+      <div class="contenedor">
+        <div class="contenedorFiu">
+          <img src="assets/fiu1.png" alt="" class="fiu" />
+        </div>
+        <input type="text" placeholder="Ingresa la cantidad" id="cantidad1" />
+      </div>
+      <div class="contenedor">
+        <div class="contenedorFiu">
+          <img src="assets/fiu2.png" alt="" class="fiu" />
+        </div>
+        <input type="text" placeholder="Ingresa la cantidad" id="cantidad2" />
+      </div>
+      <div class="contenedor">
+        <div class="contenedorFiu">
+          <img src="assets/fiu3.png" alt="" class="fiu" />
+        </div>
+        <input type="text" placeholder="Ingresa la cantidad" id="cantidad3" />
+      </div>
+    </section>
+    <p id="respuesta"></p>
+    <button
+      onclick="
+        var cantidad_1 = document.querySelector('#cantidad1')
+        var cantidad_2 = document.querySelector('#cantidad2')
+        var cantidad_3 = document.querySelector('#cantidad3')
+        var textoRespuesta = document.querySelector('#respuesta')
+        var total = Number(cantidad_1.value) + Number(cantidad_2.value) + Number(cantidad_3.value)
+        if (total <= 10 && total >= 1 ) {
+        textoRespuesta.textContent = 'Llevas ' + total + ' stickers'
+      } else if (total <= 0) {
+        textoRespuesta.textContent = 'No es una cantidad válida'
+      } else {
+        textoRespuesta.textContent = 'Llevas demasiados stickers'
+      }"
+    >
+      Verificar
+    </button>
+    <script src=""></script>
+  </body>
+</html>

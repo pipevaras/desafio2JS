@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body id="ejercicio3">
+    <h3>Ingresa el Password</h3>
+    <section id="ppal">
+      <select name="" id="select1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <select name="" id="select2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <select name="" id="select3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </section>
+    <button
+      onclick="var select1 = document.querySelector('#select1'); 
+               var select2 = document.querySelector('#select2'); 
+               var select3 = document.querySelector('#select3');
+               var respuesta = document.querySelector('#respuesta');
+               if (select1.value == 9 && select2.value == 1 && select3.value == 1){
+                    respuesta.textContent = 'Password 1 correcto'
+               }
+               else if(select1.value == 7 && select2.value == 1 && select3.value == 4){
+                    respuesta.textContent = 'Password 2 correcto'
+               }
+               else{
+                respuesta.textContent = 'Password incorrecto'
+               }    
+    "
+    >
+      Ingresar
+    </button>
+    <p id="respuesta"></p>
+  </body>
+</html>
